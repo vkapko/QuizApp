@@ -6,19 +6,19 @@ Implement the `useQuiz` hook — the app's deepest module. It owns the entire qu
 
 ## Acceptance criteria
 
-- [ ] `useQuiz(questions)` accepts an array of question objects
-- [ ] Calling `start()` shuffles questions (Fisher-Yates) and transitions phase to `active`
-- [ ] Hook exposes `currentQuestion` (the question object at the current index)
-- [ ] Hook exposes `phase`: `'idle' | 'active' | 'reviewing' | 'finished'`
-- [ ] Calling `answer(selectedIndex)` records the answer and transitions phase to `reviewing`
-- [ ] Hook exposes `isCorrect` (boolean, valid during `reviewing` phase)
-- [ ] Calling `next()` during `reviewing` advances to the next question (phase → `active`)
-- [ ] Calling `next()` on the last question transitions phase to `finished`
-- [ ] Hook exposes `score` (number of correct answers, valid during `finished` phase)
-- [ ] Hook exposes `answers` (array of `{ selectedIndex, correctIndex }` for all answered questions)
-- [ ] Hook exposes `currentIndex` and `totalQuestions`
-- [ ] Shuffle produces all input questions with no drops or duplicates (test verifies this)
-- [ ] Tests cover: idle→active transition, correct answer, incorrect answer, reviewing→active advancement, last question → finished, score computation, shuffle completeness
+- [x] `useQuiz(questions)` accepts an array of question objects
+- [x] Calling `start()` shuffles questions (Fisher-Yates) and transitions phase to `active`
+- [x] Hook exposes `currentQuestion` (the question object at the current index)
+- [x] Hook exposes `phase`: `'idle' | 'active' | 'reviewing' | 'finished'`
+- [x] Calling `answer(selectedIndex)` records the answer and transitions phase to `reviewing`
+- [x] Hook exposes `isCorrect` (boolean, valid during `reviewing` phase)
+- [x] Calling `next()` during `reviewing` advances to the next question (phase → `active`)
+- [x] Calling `next()` on the last question transitions phase to `finished`
+- [x] Hook exposes `score` (number of correct answers, valid during `finished` phase)
+- [x] Hook exposes `answers` (array of `{ selectedIndex, correctIndex }` for all answered questions)
+- [x] Hook exposes `currentIndex` and `totalQuestions`
+- [x] Shuffle produces all input questions with no drops or duplicates (test verifies this)
+- [x] Tests cover: idle→active transition, correct answer, incorrect answer, reviewing→active advancement, last question → finished, score computation, shuffle completeness
 
 ## Blocked by
 

@@ -1,6 +1,12 @@
 # Chat History Log
 
 ---
+- timestamp: "2026-05-30T20:10:00Z"
+- user_prompt: "review if the uncommitted changes fully implement @.issues/04-use-quiz-hook.md"
+- assistant_response_summary: "Reviewed useQuiz.js and useQuiz.test.js against all 12 acceptance criteria in issue #4. All criteria fully implemented. All 12 tests pass (12/12). Noted pre-existing ReactDOMTestUtils.act deprecation warning (CRA library mismatch, non-blocking). Verdict: ready to commit."
+- files_affected: none
+
+---
 - timestamp: "2026-05-30T20:05:00Z"
 - user_prompt: "fix the username not saved on fast-click bug"
 - assistant_response_summary: "Replaced blur-only localStorage write with onChange handler in Home.jsx; updated Home.test.jsx test description and removed fireEvent.blur call. All 5 Home tests pass."
@@ -79,3 +85,9 @@
 - user_prompt: "/tdd @.issues\01-project-scaffold.md"
 - assistant_response_summary: "Manually scaffolded CRA-equivalent structure (CRA rejected 'QuizApp' name due to npm capital letters restriction; Windows case-insensitivity prevented workaround). Created package.json with react-scripts 5.0.1 + react-router-dom 6, installed deps. TDD cycles: RED->GREEN for Home/Quiz/Results page stubs, then RED->GREEN for AppRoutes (Routes + 3 Route defs). App.jsx wraps AppRoutes in BrowserRouter; AppRoutes exported separately for MemoryRouter-based testing. 6/6 tests pass. Folder structure: src/api/, src/hooks/, src/pages/, src/components/ all created."
 - files_affected: "package.json, public/index.html, src/index.js, src/index.css, src/reportWebVitals.js, src/setupTests.js, src/App.jsx, src/AppRoutes.jsx, src/pages/Home.jsx, src/pages/Home.test.jsx, src/pages/Quiz.jsx, src/pages/Quiz.test.jsx, src/pages/Results.jsx, src/pages/Results.test.jsx, .gitignore"
+
+---
+- timestamp: "2026-05-30T21:00:00Z"
+- user_prompt: "/tdd @.issues/04-use-quiz-hook.md"
+- assistant_response_summary: "TDD cycle for Issue #4 useQuiz hook. Wrote 12 tests in src/hooks/useQuiz.test.js covering: idle phase, start() transitions, currentQuestion shape, totalQuestions, answer correct/incorrect, answers array recording, next() mid-quiz advancement, next() on last question → finished, score computation, shuffle completeness (Fisher-Yates walk-through). Implemented src/hooks/useQuiz.js with fisherYatesShuffle, useState for phase/shuffledQuestions/currentIndex/answers/isCorrect, useCallback for start/answer/next. All 12 new tests pass; full suite 30/30 green. Marked all ACs in .issues/04-use-quiz-hook.md."
+- files_affected: "src/hooks/useQuiz.js, src/hooks/useQuiz.test.js, .issues/04-use-quiz-hook.md"
