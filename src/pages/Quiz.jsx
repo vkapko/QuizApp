@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { getCategoryById } from '../api/quizData';
 import ProgressBar from '../components/ProgressBar';
@@ -15,7 +15,7 @@ function Quiz() {
   const quiz = useQuiz(category?.questions ?? []);
 
   useEffect(() => {
-    quiz.start();
+    if (category) quiz.start();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -34,6 +34,15 @@ function Quiz() {
       navigate('/results', { state: attempt });
     }
   }, [quiz.phase]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (!category) {
+    return (
+      <main className={styles.page}>
+        <h2>Category not found</h2>
+        <Link to="/">Back to Home</Link>
+      </main>
+    );
+  }
 
   if (quiz.phase === 'idle' || !quiz.currentQuestion) {
     return null;

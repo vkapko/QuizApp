@@ -23,6 +23,19 @@ function renderQuiz(categoryId = 'agent-fundamentals') {
   );
 }
 
+// ── Behavior 13: unknown category shows "Category not found" ─────────────────
+it('renders "Category not found" for an unknown categoryId', () => {
+  renderQuiz('does-not-exist');
+  expect(screen.getByText(/category not found/i)).toBeInTheDocument();
+});
+
+// ── Behavior 14: "Category not found" view links back to / ───────────────────
+it('"Category not found" view contains a link back to /', () => {
+  renderQuiz('does-not-exist');
+  const link = screen.getByRole('link', { name: /home/i });
+  expect(link).toHaveAttribute('href', '/');
+});
+
 // ── Behavior 9: renders progress and question on mount ────────────────────────
 it('shows "Question 1 of 5" and a question on mount', () => {
   renderQuiz('agent-fundamentals');

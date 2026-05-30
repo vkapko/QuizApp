@@ -127,3 +127,9 @@
 - user_prompt: "review if the uncommitted changes fully implement @.issues/07-results-page.md"
 - assistant_response_summary: "Reviewed all uncommitted files for issue #7: Results.jsx, ScoreDisplay.jsx, ReviewPanel.jsx, their CSS modules, and all tests. Ran 16 tests (all pass). Verified all 10 acceptance criteria are met. Minor note: ReviewPanel only shows correct answer on wrong answers, which matches the tests."
 - files_affected: none
+
+---
+- timestamp: "2026-05-30T00:00:00Z"
+- user_prompt: "/tdd @.issues/08-error-handling.md"
+- assistant_response_summary: "Implemented issue #8 error handling via TDD. Results redirect (!attempt → Navigate to /) was already in place. Added Quiz guard: getCategoryById returning undefined for unknown IDs now renders 'Category not found' with a Link to '/'. Tests: Behavior 13 (renders category not found text) and Behavior 14 (link to / exists) added to Quiz.test.jsx. All 66 tests pass."
+- files_affected: "src/pages/Quiz.jsx, src/pages/Quiz.test.jsx"
