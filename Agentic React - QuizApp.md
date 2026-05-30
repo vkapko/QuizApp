@@ -1,28 +1,3 @@
-Agentic React - QuizApp
-FSL Version: V2.0.0
-Guidelines
-You must record yourself completing the challenge and share a public Google Drive link.
-Record your entire screen (with system clock visible)
-Start recording after the environment and agent setup
-Maximum duration: 60 minutes (going over may affect evaluation)
-The recording must be one continuous take — no pauses, edits, or interruptions
-Do not use external resources (e.g., StackOverflow, blogs). Official documentation is allowed
-Explain your thinking and decisions as you work
-Useful:
-Example recording: React Challenge
-Technologies
-This project will be built using the Node-React ecosystem libraries@A
-React
-Node
-AI coding tools (e.g., Claude Code, GitHub Copilot, Codex, or similar)
-Any LLM (e.g., Claude, ChatGPT, or self-hosted models)
-AI Agentic Expectations
-You must use AI as the primary developer.
-Use AI to design the architecture and generate most of the code
-Iterate through prompting rather than manual coding
-Create agent-like workflows where possible
-Use this prompt as your first message when starting your project. Interaction logs must be included in the submitted zip file.
-We evaluate how effectively you guide AI—not how much code you write manually. Most of the implementation (≈80%+) should be AI-generated.
 The Coding Challenge
 The AI Development Quiz App is an educational product designed to help users test and reinforce their understanding of AI software development concepts such as agent design, prompt engineering, and workflow automation. The goal is to build a small but realistic quiz platform that feels like a complete product — something that could be extended, improved, or scaled in future iterations.
 Quiz Platform
@@ -95,6 +70,3 @@ Allow users to start, finish, and retake quizzes
 Add form validation and user feedback
 Handle errors and edge cases
 Apply basic, consistent styling (CSS or framework)
-Submit a zip file of your project:
-Remove unnecessary folders (e.g. node_modules, vendor, venv, .gradle, build)
-Include all required files (e.g., .chat-history)
