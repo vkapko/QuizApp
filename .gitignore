@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local data / tooling
-.chat-history/
-.issues/
-.playwright-mcp/
+/.chat-history/
+/.issues/
+/.playwright-mcp/
