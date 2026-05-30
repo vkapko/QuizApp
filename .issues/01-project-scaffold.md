@@ -6,13 +6,13 @@ Bootstrap the CRA project, install dependencies, create the full folder structur
 
 ## Acceptance criteria
 
-- [ ] `npx create-react-app quizapp` output committed (minus `node_modules`)
-- [ ] `react-router-dom` installed and listed in `package.json`
-- [ ] Folder structure exists: `src/api/`, `src/hooks/`, `src/pages/`, `src/components/`
-- [ ] `App.jsx` wraps the app in `<BrowserRouter>` with routes for `/`, `/quiz/:categoryId`, and `/results`
-- [ ] Each route renders a named stub component (e.g. `<Home />`, `<Quiz />`, `<Results />`) that returns a placeholder `<div>`
-- [ ] `npm start` launches without errors
-- [ ] `npm test` passes (default CRA smoke test)
+- [x] `npx create-react-app quizapp` output committed (minus `node_modules`)
+- [x] `react-router-dom` installed and listed in `package.json`
+- [x] Folder structure exists: `src/api/`, `src/hooks/`, `src/pages/`, `src/components/`
+- [x] `App.jsx` wraps the app in `<BrowserRouter>` with routes for `/`, `/quiz/:categoryId`, and `/results`
+- [x] Each route renders a named stub component (e.g. `<Home />`, `<Quiz />`, `<Results />`) that returns a placeholder `<div>`
+- [x] `npm start` launches without errors
+- [x] `npm test` passes (default CRA smoke test)
 
 ## Blocked by
 
