@@ -4,7 +4,7 @@ import AppRoutes from './AppRoutes';
 
 test('renders Home at /', () => {
   render(<MemoryRouter initialEntries={['/']}><AppRoutes /></MemoryRouter>);
-  expect(screen.getByText(/home/i)).toBeInTheDocument();
+  expect(screen.getByLabelText(/username/i)).toBeInTheDocument();
 });
 
 test('renders Quiz at /quiz/:categoryId', () => {
