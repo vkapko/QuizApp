@@ -133,3 +133,10 @@
 - user_prompt: "/tdd @.issues/08-error-handling.md"
 - assistant_response_summary: "Implemented issue #8 error handling via TDD. Results redirect (!attempt → Navigate to /) was already in place. Added Quiz guard: getCategoryById returning undefined for unknown IDs now renders 'Category not found' with a Link to '/'. Tests: Behavior 13 (renders category not found text) and Behavior 14 (link to / exists) added to Quiz.test.jsx. All 66 tests pass."
 - files_affected: "src/pages/Quiz.jsx, src/pages/Quiz.test.jsx"
+
+
+---
+- timestamp: "2026-05-30T00:00:00Z"
+- user_prompt: "write README.md for this project for public github repo"
+- assistant_response_summary: "Created README.md covering: feature list, tech stack table, annotated project structure, quiz categories with topics, setup commands, performance labels, state flow diagram, and a guide for adding new quiz content via quizData.js."
+- files_affected: "README.md"
