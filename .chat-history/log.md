@@ -1,6 +1,12 @@
 # Chat History Log
 
 ---
+- timestamp: "2026-05-30T19:35:38Z"
+- user_prompt: "review if uncommitted changes fully implement @.issues/05-use-history-hook.md"
+- assistant_response_summary: "Reviewed useHistory.js and useHistory.test.js against all 9 acceptance criteria in issue #5. All criteria fully implemented. All 7/7 tests pass. Pre-existing ReactDOMTestUtils.act deprecation warning is a CRA/RTL version mismatch, non-blocking. Verdict: ready to commit."
+- files_affected: none
+
+---
 - timestamp: "2026-05-30T20:10:00Z"
 - user_prompt: "review if the uncommitted changes fully implement @.issues/04-use-quiz-hook.md"
 - assistant_response_summary: "Reviewed useQuiz.js and useQuiz.test.js against all 12 acceptance criteria in issue #4. All criteria fully implemented. All 12 tests pass (12/12). Noted pre-existing ReactDOMTestUtils.act deprecation warning (CRA library mismatch, non-blocking). Verdict: ready to commit."
@@ -91,3 +97,9 @@
 - user_prompt: "/tdd @.issues/04-use-quiz-hook.md"
 - assistant_response_summary: "TDD cycle for Issue #4 useQuiz hook. Wrote 12 tests in src/hooks/useQuiz.test.js covering: idle phase, start() transitions, currentQuestion shape, totalQuestions, answer correct/incorrect, answers array recording, next() mid-quiz advancement, next() on last question → finished, score computation, shuffle completeness (Fisher-Yates walk-through). Implemented src/hooks/useQuiz.js with fisherYatesShuffle, useState for phase/shuffledQuestions/currentIndex/answers/isCorrect, useCallback for start/answer/next. All 12 new tests pass; full suite 30/30 green. Marked all ACs in .issues/04-use-quiz-hook.md."
 - files_affected: "src/hooks/useQuiz.js, src/hooks/useQuiz.test.js, .issues/04-use-quiz-hook.md"
+
+---
+- timestamp: "2026-05-30T22:00:00Z"
+- user_prompt: "/tdd @.issues/05-use-history-hook.md"
+- assistant_response_summary: "TDD cycle for Issue #5 useHistory hook. 7 tests in src/hooks/useHistory.test.js: username cold mount (empty), setUsername round-trip (state + localStorage), cold mount pre-populates username, history cold mount (empty array), addAttempt appends to history + writes localStorage, multi-addAttempt accumulation, cold mount reads pre-existing history. Implemented src/hooks/useHistory.js with useState lazy-inits reading from quizapp:username and quizapp:history keys, setUsername useCallback writing to localStorage, addAttempt useCallback with functional update. All 7 new tests pass; full suite 37/37 green. Marked all ACs in .issues/05-use-history-hook.md."
+- files_affected: "src/hooks/useHistory.js, src/hooks/useHistory.test.js, .issues/05-use-history-hook.md"

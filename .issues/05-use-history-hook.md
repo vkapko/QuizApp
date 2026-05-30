@@ -6,15 +6,15 @@ Implement the `useHistory` hook — the single point of contact with localStorag
 
 ## Acceptance criteria
 
-- [ ] `useHistory()` returns `{ username, setUsername, history, addAttempt }`
-- [ ] `setUsername(name)` writes to `localStorage` under `quizapp:username` and updates state
-- [ ] `username` is read from `localStorage` on mount (pre-populates from prior sessions)
-- [ ] `addAttempt(attempt)` appends to the `quizapp:history` array in localStorage and updates state
-- [ ] `attempt` shape: `{ categoryId, categoryName, score, total, date (ISO string), answers }`
-- [ ] Multiple `addAttempt` calls accumulate — history is never overwritten
-- [ ] `history` is read from localStorage on mount (prior sessions persist)
-- [ ] localStorage is mocked in tests (no real browser storage dependency)
-- [ ] Tests cover: username round-trip, addAttempt appends, multi-attempt accumulation, cold-mount reads pre-existing data
+- [x] `useHistory()` returns `{ username, setUsername, history, addAttempt }`
+- [x] `setUsername(name)` writes to `localStorage` under `quizapp:username` and updates state
+- [x] `username` is read from `localStorage` on mount (pre-populates from prior sessions)
+- [x] `addAttempt(attempt)` appends to the `quizapp:history` array in localStorage and updates state
+- [x] `attempt` shape: `{ categoryId, categoryName, score, total, date (ISO string), answers }`
+- [x] Multiple `addAttempt` calls accumulate — history is never overwritten
+- [x] `history` is read from localStorage on mount (prior sessions persist)
+- [x] localStorage is mocked in tests (no real browser storage dependency)
+- [x] Tests cover: username round-trip, addAttempt appends, multi-attempt accumulation, cold-mount reads pre-existing data
 
 ## Blocked by
 
