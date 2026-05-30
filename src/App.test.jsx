@@ -8,8 +8,8 @@ test('renders Home at /', () => {
 });
 
 test('renders Quiz at /quiz/:categoryId', () => {
-  render(<MemoryRouter initialEntries={['/quiz/1']}><AppRoutes /></MemoryRouter>);
-  expect(screen.getByText(/quiz/i)).toBeInTheDocument();
+  render(<MemoryRouter initialEntries={['/quiz/agent-fundamentals']}><AppRoutes /></MemoryRouter>);
+  expect(screen.getByText('Question 1 of 5')).toBeInTheDocument();
 });
 
 test('renders Results at /results', () => {
