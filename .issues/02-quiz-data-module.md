@@ -6,14 +6,14 @@ Create the mock API data module with all AI-generated quiz content. This is a pl
 
 ## Acceptance criteria
 
-- [ ] `src/api/quizData.js` exports a default array of 3 category objects
-- [ ] Each category object has the shape `{ id, category, questions: [...] }`
-- [ ] Each question has the shape `{ text, options: [string × 4], correctIndex: number, explanation: string }`
-- [ ] Categories covered: Agent Fundamentals, Prompt Engineering, Model Selection
-- [ ] Each category contains exactly 5 questions
-- [ ] All `correctIndex` values are in range `[0, 3]`
-- [ ] All questions and explanations are substantively accurate to AI development concepts
-- [ ] A `getCategoryById(id)` helper is exported and returns `undefined` for unknown ids
+- [x] `src/api/quizData.js` exports a default array of 3 category objects
+- [x] Each category object has the shape `{ id, category, questions: [...] }`
+- [x] Each question has the shape `{ text, options: [string × 4], correctIndex: number, explanation: string }`
+- [x] Categories covered: Agent Fundamentals, Prompt Engineering, Model Selection
+- [x] Each category contains exactly 5 questions
+- [x] All `correctIndex` values are in range `[0, 3]`
+- [x] All questions and explanations are substantively accurate to AI development concepts
+- [x] A `getCategoryById(id)` helper is exported and returns `undefined` for unknown ids
 
 ## Blocked by
 

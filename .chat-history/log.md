@@ -1,6 +1,18 @@
 # Chat History Log
 
 ---
+- timestamp: "2026-05-30T14:00:00Z"
+- user_prompt: "review if issue @.issues/02-quiz-data-module.md is fully implemented in uncommitted changes"
+- assistant_response_summary: "Reviewed src/api/quizData.js and src/api/quizData.test.js against all 8 acceptance criteria. All criteria pass. Noted that all correctIndex values are 1 or 2 (never 0 or 3) — technically valid but predictable."
+- files_affected: none
+
+---
+- timestamp: "2026-05-30T13:00:00Z"
+- user_prompt: "/tdd @.issues/02-quiz-data-module.md"
+- assistant_response_summary: "TDD cycle for Issue #2 quiz data module. Wrote 8 tests in src/api/quizData.test.js covering: array length, category shape, question count, question shape, correctIndex range, required category ids, getCategoryById known id, getCategoryById unknown id. Implemented src/api/quizData.js with 15 questions across Agent Fundamentals, Prompt Engineering, and Model Selection (5 each), plus getCategoryById helper. All 14 tests pass (8 new + 6 existing)."
+- files_affected: "src/api/quizData.js, src/api/quizData.test.js, .issues/02-quiz-data-module.md"
+
+---
 - timestamp: "2026-05-30T11:48:00Z"
 - user_prompt: "/grill-with-docs review this file and create a plan how to implement"
 - assistant_response_summary: "Conducted 10-question grilling session resolving: CRA scaffolding, CSS Modules styling, React Router v6, location.state handoff, username in localStorage, randomized question order only (stretch), AI-generated quiz data, 5 questions/category, performance label thresholds, and tests. Updated CLAUDE.md with all decisions. Produced phased implementation plan (6 phases)."
