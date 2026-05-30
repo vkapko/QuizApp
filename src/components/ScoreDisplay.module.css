@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.score {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.percentage {
+  font-size: 1.5rem;
+  color: #555;
+  margin: 0.25rem 0;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}

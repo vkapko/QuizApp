@@ -1,0 +1,32 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.item {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.question {
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.correct {
+  color: #2e7d32;
+  margin: 0.25rem 0;
+}
+
+.wrong {
+  color: #c62828;
+  margin: 0.25rem 0;
+}
+
+.correctAnswer {
+  color: #2e7d32;
+  margin: 0.25rem 0;
+}

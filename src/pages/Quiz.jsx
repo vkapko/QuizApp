@@ -28,6 +28,7 @@ function Quiz() {
         total: quiz.totalQuestions,
         date: new Date().toISOString(),
         answers: quiz.answers,
+        questions: quiz.questions,
         username: localStorage.getItem(USERNAME_KEY) ?? '',
       };
       navigate('/results', { state: attempt });

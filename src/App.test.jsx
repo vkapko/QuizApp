@@ -12,7 +12,7 @@ test('renders Quiz at /quiz/:categoryId', () => {
   expect(screen.getByText('Question 1 of 5')).toBeInTheDocument();
 });
 
-test('renders Results at /results', () => {
+test('redirects to / when navigating to /results without state', () => {
   render(<MemoryRouter initialEntries={['/results']}><AppRoutes /></MemoryRouter>);
-  expect(screen.getByText(/results/i)).toBeInTheDocument();
+  expect(screen.getByLabelText(/username/i)).toBeInTheDocument();
 });

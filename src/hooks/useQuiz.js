@@ -52,6 +52,7 @@ export function useQuiz(questions) {
     currentQuestion: shuffledQuestions[currentIndex] ?? null,
     currentIndex,
     totalQuestions: shuffledQuestions.length,
+    questions: shuffledQuestions,
     answers,
     isCorrect,
     score: answers.filter((a) => a.selectedIndex === a.correctIndex).length,

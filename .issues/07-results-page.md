@@ -6,17 +6,17 @@ Build the Results page end-to-end. It reads the completed attempt from `location
 
 ## Acceptance criteria
 
-- [ ] Results page reads the attempt object from `location.state`
-- [ ] If `location.state` is missing or invalid, user is redirected to `/`
-- [ ] `ScoreDisplay` renders the score (e.g. "4 / 5"), percentage (e.g. "80%"), and performance label
-- [ ] Performance labels: 5/5 → "Excellent!", 3–4/5 → "Good job! You're getting there!", 0–2/5 → "Needs review — keep studying!"
-- [ ] `ReviewPanel` renders all 5 questions with the user's selected answer and the correct answer marked
-- [ ] Attempt is saved via `useHistory.addAttempt` on mount (saved once, not on every render)
-- [ ] Attempt history list renders all past attempts (category, score, date)
-- [ ] "Retake Quiz" button navigates back to `/quiz/:categoryId` for the same category; history is preserved
-- [ ] "Back to Home" link navigates to `/`
-- [ ] Results page has a CSS Module stylesheet
-- [ ] `ScoreDisplay` tests: all three label thresholds, score and percentage formatting at boundary values (0, 3, 4, 5)
+- [x] Results page reads the attempt object from `location.state`
+- [x] If `location.state` is missing or invalid, user is redirected to `/`
+- [x] `ScoreDisplay` renders the score (e.g. "4 / 5"), percentage (e.g. "80%"), and performance label
+- [x] Performance labels: 5/5 → "Excellent!", 3–4/5 → "Good job! You're getting there!", 0–2/5 → "Needs review — keep studying!"
+- [x] `ReviewPanel` renders all 5 questions with the user's selected answer and the correct answer marked
+- [x] Attempt is saved via `useHistory.addAttempt` on mount (saved once, not on every render)
+- [x] Attempt history list renders all past attempts (category, score, date)
+- [x] "Retake Quiz" button navigates back to `/quiz/:categoryId` for the same category; history is preserved
+- [x] "Back to Home" link navigates to `/`
+- [x] Results page has a CSS Module stylesheet
+- [x] `ScoreDisplay` tests: all three label thresholds, score and percentage formatting at boundary values (0, 3, 4, 5)
 
 ## Blocked by
 
